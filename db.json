@@ -136,5 +136,59 @@
             "declarationComment": "Awaiting Documentation",
             "documentNumber": "DOC-008"
         }
+    ],
+    "dvh": {
+        "ExtensionData": {},
+        "CustomsDept": "МТО \"АВТОМОБИЛЬНЫЙ\" ЖДТ \"СЕВЕРНАЯ\"",
+        "ErrorMessage": null,
+        "InvoceStatus": "ЗАКРЫТ",
+        "IsAir": false,
+        "RXOKPOINN": "",
+        "RXTitle": "MURZABEKOV SAMAT, ID CARD: ID3522319",
+        "RailCarNumbers": null,
+        "RegNumber": "41715006230063796",
+        "SVH": "ГОСУДАРСТВЕННОЕ ПРЕДПРИЯТИЕ \"ТАМОЖЕННАЯ ИНФРАСТРУКТУРА\"ПРИ ГОСУДАРСТВЕННОЙ ТАМОЖЕННОЙ СЛУЖБЕ ПРИ ПРАВИТЕЛЬСТВЕ КЫРГЫЗСКОЙ РЕСПУБЛИКЕ",
+        "TD": "10702020/171023/5006063",
+        "TSDInfo": [
+            {
+                "ExtensionData": {},
+                "AddMUQty": "1.000000",
+                "AddMeasureUnit": "ШТ",
+                "Cost": 8000,
+                "CreationDate": "/Date(1699523904000)/",
+                "Currency": "АМЕРИКАНСКИЕ ДОЛЛАРЫ",
+                "GoodsName": "ЛЕГКОВОЙ АВТОМОБИЛЬ, ПЕРЕМЕМЕЩАЮЩИЙСЯ В КАЧЕСТВЕ ТОВАРА СВОИМ ХОДОМ, БЫВШИЙ В ЭКСПЛУАТАЦИИ, HUYNDAI SANTAFE, 2023 ГОД ВЫПУСКА, VIN: KMHP381LHRU002999, V-2497 CC, БЕНЗИН, МОЩНОСТЬ: 281 Л/С, 207 КВТ",
+                "GrossWeight": 2370,
+                "HSCode": "8703231982",
+                "HSCodeType": "ТОВАР",
+                "ItemNum": 1,
+                "TSD": "41715006230063796"
+            }
+        ],
+        "TranspNum": "HUYNDAI SANTAFE"
+    },
+    "owners": [
+        {
+            "ExtensionData": {},
+            "Address": "Г. ОШ. УЛ. АЛА БУКА 53",
+            "Citizenship": "",
+            "Code": "",
+            "DipMissions": false,
+            "EliminationDate": "/Date(-6847826400000)/",
+            "FWRegistr": false,
+            "LegalForm": "",
+            "LocalCode": false,
+            "Name": "МАМАДАЛИЕВ САРВАР ХАЛМАХАМАТОВИЧ",
+            "NonResident": false,
+            "OKPO": "",
+            "Passport": "АИ1271072",
+            "Phon": "",
+            "Region": "",
+            "RegistrationDate": "/Date(1569780000000)/",
+            "RegistrationFEZ": false,
+            "SingleTaxPayer": false,
+            "TIN": "21701198101209",
+            "ZipCode": ""
+        }
     ]
 }
