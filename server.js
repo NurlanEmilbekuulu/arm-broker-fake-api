@@ -22,6 +22,13 @@ try {
     console.error('Error reading CROs file', err);
 }
 
+server.post('/cro', (req, res) => {
+    const newCRO = { uid: uuidv4(), ...req.body };
+
+    CROs.push(newCRO);
+    res.json(newCRO);
+});
+
 server.post('/cro/:croId/clone', (req, res) => {
     const { croId } = req.params;
     const originalCRO = CROs.find(cro => cro.uid === croId);
@@ -49,6 +56,7 @@ server.delete('/cro/:croId', (req, res) => {
 server.use(jsonServer.rewriter({
     '/api/eeus?reg_number=:reg_number': '/dvh',
     '/api/eeus/find-owner-by-tin-of-passport?tin=:tin': '/owners?TIN=:tin',
+    '/payers?INN=:inn': '/payers?g4_PayerINN=:inn',
 }));
 
 server.use(middlewares);

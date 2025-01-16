@@ -190,5 +190,117 @@
             "TIN": "21701198101209",
             "ZipCode": ""
         }
+    ],
+    "payers": [
+        {
+            "g4_PayerType": "true",
+            "g4_PayerTitle": "АБДУРАХМАНХОДЖАЕВ ДОСТОНБЕК МИРКАМИЛОВИЧ",
+            "g4_PayerINN": "21511199200680",
+            "g4_PayerOKPO": "",
+            "g4_PayerAddress": "ЦЕНТРАЛЬНЫЙ АППАРАТ, Г.ОШ АШХАБАДСКАЯ, 95",
+            "g4_SendIDDocSeries": "",
+            "g4_SendIDDocIssuer": "",
+            "g4_SendIDDocDate": "0001-01-01T00:00:00",
+            "g4_SendCOATE": "41702205805010"
+        },
+        {
+            "g4_PayerType": "true",
+            "g4_PayerTitle": "АБДУРАХМАНОВА ГУЛЬНАРА АБДУЛЛАЕВНА",
+            "g4_PayerINN": "11511199200680",
+            "g4_PayerOKPO": "",
+            "g4_PayerAddress": "ЦЕНТРАЛЬНЫЙ АППАРАТ, Г.ОШ АШХАБАДСКАЯ, 95",
+            "g4_SendIDDocSeries": "",
+            "g4_SendIDDocIssuer": "",
+            "g4_SendIDDocDate": "0001-01-01T00:00:00",
+            "g4_SendCOATE": "41702205805010"
+        },
+        {
+            "g4_PayerType": "true",
+            "g4_PayerTitle": "ИВАНОВ ИВАН ИВАНОВИЧ",
+            "g4_PayerINN": "31512199300123",
+            "g4_PayerOKPO": "",
+            "g4_PayerAddress": "УЛИЦА ЛЕНИНА, ДОМ 12, Г.МОСКВА",
+            "g4_SendIDDocSeries": "AA1234567",
+            "g4_SendIDDocIssuer": "ОВД ГОРОДА МОСКВЫ",
+            "g4_SendIDDocDate": "2010-05-15T00:00:00",
+            "g4_SendCOATE": "41702205805011"
+        },
+        {
+            "g4_PayerType": "false",
+            "g4_PayerTitle": "СИДОРОВА АННА ПЕТРОВНА",
+            "g4_PayerINN": "21515199300567",
+            "g4_PayerOKPO": "",
+            "g4_PayerAddress": "УЛИЦА КИРОВА, ДОМ 7, Г.САНКТ-ПЕТЕРБУРГ",
+            "g4_SendIDDocSeries": "BB7654321",
+            "g4_SendIDDocIssuer": "ОВД ГОРОДА САНКТ-ПЕТЕРБУРГА",
+            "g4_SendIDDocDate": "2012-07-20T00:00:00",
+            "g4_SendCOATE": "41702205805012"
+        },
+        {
+            "g4_PayerType": "true",
+            "g4_PayerTitle": "ПЕТРОВ АЛЕКСЕЙ НИКОЛАЕВИЧ",
+            "g4_PayerINN": "21512199300987",
+            "g4_PayerOKPO": "",
+            "g4_PayerAddress": "УЛИЦА ПУШКИНА, ДОМ 5, Г.КИЕВ",
+            "g4_SendIDDocSeries": "CC9876543",
+            "g4_SendIDDocIssuer": "ОВД ГОРОДА КИЕВА",
+            "g4_SendIDDocDate": "2015-03-10T00:00:00",
+            "g4_SendCOATE": "41702205805013"
+        },
+        {
+            "g4_PayerType": "false",
+            "g4_PayerTitle": "КУЗНЕЦОВА ОЛЬГА ВЛАДИМИРОВНА",
+            "g4_PayerINN": "11512199400111",
+            "g4_PayerOKPO": "",
+            "g4_PayerAddress": "УЛИЦА СОВЕТСКАЯ, ДОМ 9, Г.МИНСК",
+            "g4_SendIDDocSeries": "DD1122334",
+            "g4_SendIDDocIssuer": "ОВД ГОРОДА МИНСКА",
+            "g4_SendIDDocDate": "2017-08-25T00:00:00",
+            "g4_SendCOATE": "41702205805014"
+        },
+        {
+            "g4_PayerType": "true",
+            "g4_PayerTitle": "МОРЕВА ЕКАТЕРИНА СЕРГЕЕВНА",
+            "g4_PayerINN": "11511199400222",
+            "g4_PayerOKPO": "",
+            "g4_PayerAddress": "УЛИЦА ГАГАРИНА, ДОМ 15, Г.ОДЕССА",
+            "g4_SendIDDocSeries": "EE2233445",
+            "g4_SendIDDocIssuer": "ОВД ГОРОДА ОДЕССЫ",
+            "g4_SendIDDocDate": "2018-11-30T00:00:00",
+            "g4_SendCOATE": "41702205805015"
+        },
+        {
+            "g4_PayerType": "false",
+            "g4_PayerTitle": "НОВОСЕЛЬЦЕВ ИЛЬЯ АНДРЕЕВИЧ",
+            "g4_PayerINN": "11511199400333",
+            "g4_PayerOKPO": "",
+            "g4_PayerAddress": "УЛИЦА ЛЕСНАЯ, ДОМ 20, Г.АЛМАТЫ",
+            "g4_SendIDDocSeries": "FF3344556",
+            "g4_SendIDDocIssuer": "ОВД ГОРОДА АЛМАТЫ",
+            "g4_SendIDDocDate": "2019-01-15T00:00:00",
+            "g4_SendCOATE": "41702205805016"
+        },
+        {
+            "g4_PayerType": "true",
+            "g4_PayerTitle": "БЕЛЯЕВ ДМИТРИЙ ИГОРЕВИЧ",
+            "g4_PayerINN": "21512199500444",
+            "g4_PayerOKPO": "",
+            "g4_PayerAddress": "УЛИЦА ЧАЙКОВСКОГО, ДОМ 10, Г.ТАШКЕНТ",
+            "g4_SendIDDocSeries": "GG4455667",
+            "g4_SendIDDocIssuer": "ОВД ГОРОДА ТАШКЕНТА",
+            "g4_SendIDDocDate": "2020-04-10T00:00:00",
+            "g4_SendCOATE": "41702205805017"
+        },
+        {
+            "g4_PayerType": "false",
+            "g4_PayerTitle": "КОЛЕСНИКОВА МАРИНА АНАТОЛЬЕВНА",
+            "g4_PayerINN": "21511199500555",
+            "g4_PayerOKPO": "",
+            "g4_PayerAddress": "УЛИЦА ШЕВЧЕНКО, ДОМ 18, Г.БИШКЕК",
+            "g4_SendIDDocSeries": "HH5566778",
+            "g4_SendIDDocIssuer": "ОВД ГОРОДА БИШКЕКА",
+            "g4_SendIDDocDate": "2021-07-05T00:00:00",
+            "g4_SendCOATE": "41702205805018"
+        }
     ]
 }
