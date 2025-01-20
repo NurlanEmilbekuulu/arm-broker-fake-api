@@ -1,0 +1,769 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WebDeclarant",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Auth": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Auth/refresh": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/BrokerData/GetClassifiers": {
+      "get": {
+        "tags": [
+          "BrokerData"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/BrokerData/GetRepository": {
+      "get": {
+        "tags": [
+          "BrokerData"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/BrokerData/GetCRD": {
+      "get": {
+        "tags": [
+          "BrokerData"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CRD": {
+      "get": {
+        "tags": [
+          "CRD"
+        ],
+        "parameters": [
+          {
+            "name": "DateBegin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "DateEnd",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "Id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "OrderBy",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CRD"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CRD"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CRD"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CRD"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "CRD"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CRD"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CRD"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CRD"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "CRD"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CRD/CloneCustomsReceipt": {
+      "post": {
+        "tags": [
+          "CRD"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CRD/SendCustomsReceipt": {
+      "post": {
+        "tags": [
+          "CRD"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CRD/GetCustomsReceiptDataById": {
+      "get": {
+        "tags": [
+          "CRD"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CRD/GetCustomsReceiptErrorById": {
+      "get": {
+        "tags": [
+          "CRD"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CRD/Test": {
+      "get": {
+        "tags": [
+          "CRD"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/CRD/GetAllDictionaries": {
+      "get": {
+        "tags": [
+          "CRD"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CRD": {
+        "type": "object",
+        "properties": {
+          "specialist": {
+            "type": "string",
+            "nullable": true
+          },
+          "brokerFillingDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "g1_Purpose": {
+            "type": "string",
+            "nullable": true
+          },
+          "g1_Method": {
+            "type": "string",
+            "nullable": true
+          },
+          "g1_TranspKind": {
+            "type": "string",
+            "nullable": true
+          },
+          "g2_CustomsReceiptCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "g4_PayerType": {
+            "type": "boolean"
+          },
+          "g4_PayerTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "g4_PayerINN": {
+            "type": "string",
+            "nullable": true
+          },
+          "g4_PayerOKPO": {
+            "type": "string",
+            "nullable": true
+          },
+          "g4_PayerAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "g4_SendIDDocSeries": {
+            "type": "string",
+            "nullable": true
+          },
+          "g4_SendIDDocIssuer": {
+            "type": "string",
+            "nullable": true
+          },
+          "g4_SendIDDocDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "g4_SendCOATE": {
+            "type": "string",
+            "nullable": true
+          },
+          "g5_Currency": {
+            "type": "string",
+            "nullable": true
+          },
+          "g5_StatCurrencyRate": {
+            "type": "number",
+            "format": "double"
+          },
+          "g5_EuroCurrencyRate": {
+            "type": "number",
+            "format": "double"
+          },
+          "g6_TotalWeght": {
+            "type": "number",
+            "format": "double"
+          },
+          "g6_Cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "g6_USACost": {
+            "type": "number",
+            "format": "double"
+          },
+          "g6_EuroCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "g10_TakePaymentPerson": {
+            "type": "string",
+            "nullable": true
+          },
+          "userPaymentDetails": {
+            "type": "boolean"
+          },
+          "intMail": {
+            "type": "boolean"
+          },
+          "submittedDocuments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SubmittedDocument"
+            },
+            "nullable": true
+          },
+          "goods": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Good"
+            },
+            "nullable": true
+          },
+          "paymentDetails": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PaymentDetails"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Good": {
+        "type": "object",
+        "properties": {
+          "g6_GoodsNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "goodsGroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "g6_GoodsName": {
+            "type": "string",
+            "nullable": true
+          },
+          "g6_VehicleName": {
+            "type": "string",
+            "nullable": true
+          },
+          "g6_VehicleModel": {
+            "type": "string",
+            "nullable": true
+          },
+          "g6_VinNum": {
+            "type": "string",
+            "nullable": true
+          },
+          "g6_ModelYear": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "g6_ModelDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "g6_SweptVolume": {
+            "type": "number",
+            "format": "double"
+          },
+          "g6_EnginePowerQuanity": {
+            "type": "number",
+            "format": "double"
+          },
+          "g6_Trailer": {
+            "type": "boolean"
+          },
+          "g6_Semitrailer": {
+            "type": "boolean"
+          },
+          "porter": {
+            "type": "boolean"
+          },
+          "g6_RightHandDrive": {
+            "type": "boolean"
+          },
+          "g6_LeftHandDrive": {
+            "type": "boolean"
+          },
+          "g6_GoodsWeight": {
+            "type": "number",
+            "format": "double"
+          },
+          "g6_AddMU": {
+            "type": "string",
+            "nullable": true
+          },
+          "g6_AddMUQty": {
+            "type": "number",
+            "format": "double"
+          },
+          "g6_OtherMU": {
+            "type": "string",
+            "nullable": true
+          },
+          "g6_OtherMUQty": {
+            "type": "number",
+            "format": "double"
+          },
+          "g6_OtherInfo": {
+            "type": "string",
+            "nullable": true
+          },
+          "g7_Cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "g7_USACost": {
+            "type": "number",
+            "format": "double"
+          },
+          "g7_EuroCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "tempDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "payments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Payment"
+            },
+            "nullable": true
+          },
+          "prevTSDs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PrevTSD"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginRequest": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Payment": {
+        "type": "object",
+        "properties": {
+          "g7_PaymentKind": {
+            "type": "string",
+            "nullable": true
+          },
+          "g8_BaseSum": {
+            "type": "number",
+            "format": "double"
+          },
+          "g8_Rate": {
+            "type": "number",
+            "format": "double"
+          },
+          "g8_RateType": {
+            "type": "string",
+            "nullable": true
+          },
+          "g8_AmountCharged": {
+            "type": "number",
+            "format": "double"
+          },
+          "g8_PaymentMethod": {
+            "type": "string",
+            "nullable": true
+          },
+          "g8_RateCurrency": {
+            "type": "string",
+            "nullable": true
+          },
+          "g8_RateCurrencyRate": {
+            "type": "number",
+            "format": "double"
+          },
+          "npp": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PaymentDetails": {
+        "type": "object",
+        "properties": {
+          "g8_PaymentKind": {
+            "type": "string",
+            "nullable": true
+          },
+          "g8_PaymentAmount": {
+            "type": "number",
+            "format": "double"
+          },
+          "g8_PayDocNum": {
+            "type": "string",
+            "nullable": true
+          },
+          "g8_PaymentDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "gB_PaymentDocKind": {
+            "type": "string",
+            "nullable": true
+          },
+          "gB_PaymentMethod": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PrevTSD": {
+        "type": "object",
+        "properties": {
+          "itemPrevDocNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "prevDoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "prevGoodsNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tsdGrossWeight": {
+            "type": "number",
+            "format": "double"
+          },
+          "prevDocStatus": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RefreshTokenRequest": {
+        "type": "object",
+        "properties": {
+          "refreshToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SubmittedDocument": {
+        "type": "object",
+        "properties": {
+          "g6_DocType": {
+            "type": "string",
+            "nullable": true
+          },
+          "g6_Doc": {
+            "type": "string",
+            "nullable": true
+          },
+          "g6_DocNum": {
+            "type": "string",
+            "nullable": true
+          },
+          "g6_DocDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Add JWT here",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

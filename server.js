@@ -54,6 +54,7 @@ server.delete('/cro/:croId', (req, res) => {
 });
 
 server.use(jsonServer.rewriter({
+    '/api/CRD': '/CROs',
     '/api/eeus?reg_number=:reg_number': '/dvh',
     '/api/eeus/find-owner-by-tin-of-passport?tin=:tin': '/owners?TIN=:tin',
     '/payers?INN=:inn': '/payers?g4_PayerINN=:inn',
